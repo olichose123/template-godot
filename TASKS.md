@@ -9,9 +9,9 @@ This file tracks planned features, improvements, and bug fixes for the Godot C# 
 - [ ] **Advanced Error Logging**: Enhance the `InitializationContext` to include stack traces and mod-specific error attribution.
 
 ## Medium Priority: Modding & Data
-- [ ] **Definition Registry & Validation**: 
-    - [ ] Create a central registry for parsed definitions.
-    - [ ] Add a `DefinitionValidationStep` to verify that all `ResourceReference` and cross-references (IDs) are valid after loading.
+- [ ] **Definition Validation & Integrity**: 
+    - [x] **Registry Implementation**: (Handled by `Olib.Definitions` base class).
+    - [ ] **Cross-Reference Validation**: Add a `DefinitionValidationStep` to verify that all `Reference<T>` and `ResourceReference<T>` targets exist after loading.
 - [x] **Strict Load Order Validation**: Update `ModDiscoveryStep` to verify that for every active mod, its dependencies are already listed earlier in the activation sequence.
 - [ ] **Definition Hot-Reloading**: Add support for re-parsing JSON definitions in-game for faster data iteration.
 - [ ] **Localization System**: Implement a mod-aware localization step to load translation files (`.po` or JSON) from active mods.
