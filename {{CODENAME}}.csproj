@@ -1,0 +1,18 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+  <ItemGroup>
+    <ProjectReference Include="..\Definitions\Definitions.csproj" />
+    <ProjectReference Include="..\Olib.Godot.Modding\Olib.Modding.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Chickensoft.Log" Version="2.0.0" />
+    <PackageReference Include="Chickensoft.Log.Godot" Version="1.0.76" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);IDE0017</NoWarn>
+  </PropertyGroup>
+</Project>

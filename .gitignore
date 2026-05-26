@@ -1,0 +1,8 @@
+.godot/
+*.csproj.lscache
+*.csproj.old
+*.csproj.old.*
+output.log
+bin/
+obj/
+.vscode/
