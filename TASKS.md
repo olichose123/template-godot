@@ -12,7 +12,7 @@ This file tracks planned features, improvements, and bug fixes for the Godot C# 
 - [ ] **Definition Registry & Validation**: 
     - [ ] Create a central registry for parsed definitions.
     - [ ] Add a `DefinitionValidationStep` to verify that all `ResourceReference` and cross-references (IDs) are valid after loading.
-- [ ] **Mod Dependency Graph**: Extend `ModDiscoveryStep` to resolve complex mod dependency trees (e.g., Mod A requires Mod B > 1.2.0).
+- [x] **Strict Load Order Validation**: Update `ModDiscoveryStep` to verify that for every active mod, its dependencies are already listed earlier in the activation sequence.
 - [ ] **Definition Hot-Reloading**: Add support for re-parsing JSON definitions in-game for faster data iteration.
 - [ ] **Localization System**: Implement a mod-aware localization step to load translation files (`.po` or JSON) from active mods.
 
